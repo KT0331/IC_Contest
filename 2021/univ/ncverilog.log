@@ -1,0 +1,957 @@
+ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Dec 24, 2021 at 14:00:20 CST
+ncverilog
+	-sv
+	tb.sv
+	-v
+	geofence_syn.v
+	+ncmaxdelays
+	+define+SDF
+	-v
+	tsmc13_neg.v
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: geofence_syn.v
+	module geofence_syn.geofence:v
+		errors: 0, warnings: 0
+		Caching library 'geofence_syn' ....... Done
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+  DFFRX1 \counter_reg[2]  ( .D(N382), .CK(clk), .RN(n2102), .Q(counter[2]) );
+                        |
+ncelab: *W,CUVWSP (./geofence_syn.v,304|24): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][9]  ( .D(n982), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,307|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][8]  ( .D(n983), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,309|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][7]  ( .D(n984), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,311|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][6]  ( .D(n985), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,313|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][5]  ( .D(n986), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,315|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][4]  ( .D(n987), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,317|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][3]  ( .D(n988), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,319|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][2]  ( .D(n989), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,321|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][1]  ( .D(n990), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,323|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[0][0]  ( .D(n991), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,325|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[2][9]  ( .D(n1002), .CK(clk), .RN(n2101), .QN(n2013) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,327|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][8]  ( .D(n1003), .CK(clk), .RN(n2104), .QN(n2010) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,328|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][7]  ( .D(n1004), .CK(clk), .RN(n2102), .QN(n2007) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,329|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][6]  ( .D(n1005), .CK(clk), .RN(n2102), .QN(n2006) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,330|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][5]  ( .D(n1006), .CK(clk), .RN(n2102), .QN(n2005) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,331|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][4]  ( .D(n1007), .CK(clk), .RN(n2102), .QN(n2000) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,332|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][3]  ( .D(n1008), .CK(clk), .RN(n2102), .QN(n1999) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,333|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][2]  ( .D(n1009), .CK(clk), .RN(n2102), .QN(n1994) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,334|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][1]  ( .D(n1010), .CK(clk), .RN(n2103), .QN(n1988) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,335|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[2][0]  ( .D(n1011), .CK(clk), .RN(n2101), .QN(n1987) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,336|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][9]  ( .D(n1022), .CK(clk), .RN(n2103), .QN(n2070) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,337|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][8]  ( .D(n1023), .CK(clk), .RN(n2103), .QN(n2065) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,338|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][7]  ( .D(n1024), .CK(clk), .RN(n2103), .QN(n2060) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,339|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][6]  ( .D(n1025), .CK(clk), .RN(n2103), .QN(n2053) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,340|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][5]  ( .D(n1026), .CK(clk), .RN(n2101), .QN(n1980) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,341|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][4]  ( .D(n1027), .CK(clk), .RN(n2104), .QN(n2052) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,342|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][3]  ( .D(n1028), .CK(clk), .RN(n2101), .QN(n2047) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,343|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][2]  ( .D(n1029), .CK(clk), .RN(n2100), .QN(n2042) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,344|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][1]  ( .D(n1030), .CK(clk), .RN(n2103), .QN(n2030) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,345|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[4][0]  ( .D(n1031), .CK(clk), .RN(n2101), .QN(n2029) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,346|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[5][9]  ( .D(n1032), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,347|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][8]  ( .D(n1033), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,349|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][7]  ( .D(n1034), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,351|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][6]  ( .D(n1035), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,353|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][5]  ( .D(n1036), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,355|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][4]  ( .D(n1037), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,357|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][3]  ( .D(n1038), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,359|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][2]  ( .D(n1039), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,361|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][1]  ( .D(n1040), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,363|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[5][0]  ( .D(n1041), .CK(clk), .RN(n2103), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,365|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \Y_temp_reg[6][9]  ( .D(n1042), .CK(clk), .RN(n2103), .QN(n2012) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,367|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][8]  ( .D(n1043), .CK(clk), .RN(n2101), .QN(n2011) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,368|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][7]  ( .D(n1044), .CK(clk), .RN(n2100), .QN(n2004) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,369|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][6]  ( .D(n1045), .CK(clk), .RN(n2103), .QN(n2008) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,370|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][5]  ( .D(n1046), .CK(clk), .RN(n2103), .QN(n2003) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,371|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][4]  ( .D(n1047), .CK(clk), .RN(n2100), .QN(n2001) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,372|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][3]  ( .D(n1048), .CK(clk), .RN(n2100), .QN(n1998) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,373|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][2]  ( .D(n1049), .CK(clk), .RN(n2100), .QN(n1995) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,374|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][1]  ( .D(n1050), .CK(clk), .RN(n2100), .QN(n1989) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,375|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \Y_temp_reg[6][0]  ( .D(n1051), .CK(clk), .RN(n2100), .QN(n1986) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,376|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[0][9]  ( .D(n923), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,377|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][8]  ( .D(n924), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,379|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][7]  ( .D(n925), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,381|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][6]  ( .D(n926), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,383|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][5]  ( .D(n927), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,385|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][4]  ( .D(n928), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,387|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][3]  ( .D(n929), .CK(clk), .RN(n2100), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,389|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][2]  ( .D(n930), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,391|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][1]  ( .D(n931), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,393|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[0][0]  ( .D(n932), .CK(clk), .RN(n2101), .Q(
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,395|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 \X_temp_reg[6][9]  ( .D(n922), .CK(clk), .RN(n2102), .QN(n2014) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,397|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][8]  ( .D(n921), .CK(clk), .RN(n2104), .QN(n2015) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,398|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][7]  ( .D(n920), .CK(clk), .RN(n2104), .QN(n2009) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,399|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][6]  ( .D(n919), .CK(clk), .RN(n2102), .QN(n2002) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,400|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][5]  ( .D(n918), .CK(clk), .RN(n2103), .QN(n1996) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,401|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][4]  ( .D(n917), .CK(clk), .RN(n2104), .QN(n1997) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,402|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][3]  ( .D(n916), .CK(clk), .RN(n2102), .QN(n1993) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,403|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][2]  ( .D(n915), .CK(clk), .RN(n2102), .QN(n1992) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,404|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][1]  ( .D(n914), .CK(clk), .RN(n2102), .QN(n1990) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,405|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \X_temp_reg[6][0]  ( .D(n913), .CK(clk), .RN(n2102), .QN(n1991) );
+                          |
+ncelab: *W,CUVWSP (./geofence_syn.v,406|26): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 \p_or_n_temp_reg[3]  ( .D(n894), .CK(clk), .RN(n2102), .Q(
+                            |
+ncelab: *W,CUVWSP (./geofence_syn.v,407|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): QN
+
+  DFFRX1 valid_reg ( .D(N340), .CK(clk), .RN(n2103), .QN(n1056) );
+                 |
+ncelab: *W,CUVWSP (./geofence_syn.v,409|17): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX1 is_inside_reg ( .D(N343), .CK(clk), .RN(n2102), .QN(n1058) );
+                     |
+ncelab: *W,CUVWSP (./geofence_syn.v,410|21): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18307): Q
+
+  DFFRX2 \p_or_n_temp_reg[0]  ( .D(n911), .CK(clk), .RN(n2102), .Q(
+                            |
+ncelab: *W,CUVWSP (./geofence_syn.v,774|28): 1 output port was not connected:
+ncelab: (./tsmc13_neg.v,18376): QN
+
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./geofence_syn.sdf"
+	Compiled SDF file "geofence_syn.sdf.X" older than source SDF file "./geofence_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "geofence_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     geofence_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_geofence
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 6177  Annotated = 100.00% -- No. of Tchecks = 1002  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        6177	        6177	      100.00
+		      $width	         501	         501	      100.00
+		  $setuphold	         501	         501	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testfixture:sv <0x2f0fb7ec>
+			streams:  15, words: 22926
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 1371      71
+		UDPs:                     167       1
+		Primitives:              4149       7
+		Timing outputs:          1617      23
+		Registers:                184      20
+		Scalar wires:            1787       -
+		Expanded wires:            20       2
+		Always blocks:              5       5
+		Initial blocks:             9       9
+		Pseudo assignments:         3       3
+		Timing checks:           1503     182
+		Interconnect:            4466       -
+		Delayed tcheck signals:   501     174
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.039/tools/inca/files/ncsimrc
+ncsim> run
+ncsim: *W,DVEXACC: some objects excluded from $dumpvars due to access restrictions, use +access+r on command line for access to all objects.
+            File: ./tb.sv, line = 44, pos = 12
+           Scope: testfixture
+            Time: 0 FS + 0
+
+----------------------
+-- Simulation Start --
+----------------------
+Scenario1(in):     X     Y
+        Object:   220,  320
+           AP1:   103,  340
+           AP2:   755,  510
+           AP3:   103,   50
+           AP4:   982,  280
+           AP5:   298,  560
+           AP6:   710,   50
+Object1: Golde/Return => 1/1, PASS
+
+Scenario2(out):    X     Y
+        Object:   220,  720
+           AP1:   298,  560
+           AP2:   103,   50
+           AP3:   103,  340
+           AP4:   710,   50
+           AP5:   755,  510
+           AP6:   982,  280
+Object2: Golde/Return => 0/0, PASS
+
+Scenario3(out):    X     Y
+        Object:   140,  160
+           AP1:   400,   80
+           AP2:   300,  800
+           AP3:   980,  120
+           AP4:   710,  620
+           AP5:   103,  500
+           AP6:   130,  210
+Object3: Golde/Return => 0/0, PASS
+
+Scenario4(in):     X     Y
+        Object:   140,  160
+           AP1:   298,  560
+           AP2:   755,  510
+           AP3:   103,   50
+           AP4:   710,   50
+           AP5:   982,  280
+           AP6:   103,  340
+Object4: Golde/Return => 1/1, PASS
+
+Scenario5(in):     X     Y
+        Object:   410,  510
+           AP1:   755,  510
+           AP2:   982,  280
+           AP3:   298,  560
+           AP4:   710,   50
+           AP5:   103,   50
+           AP6:   103,  340
+Object5: Golde/Return => 1/1, PASS
+
+Scenario6(out):    X     Y
+        Object:    20,  625
+           AP1:   755,  510
+           AP2:   103,  340
+           AP3:   710,   50
+           AP4:   982,  280
+           AP5:   298,  560
+           AP6:   103,   50
+Object6: Golde/Return => 0/0, PASS
+
+Scenario7(out):    X     Y
+        Object:   850,  100
+           AP1:   103,   50
+           AP2:   710,   50
+           AP3:   298,  560
+           AP4:   755,  510
+           AP5:   982,  280
+           AP6:   103,  340
+Object7: Golde/Return => 0/0, PASS
+
+Scenario8(out):    X     Y
+        Object:    20,  625
+           AP1:   300,  800
+           AP2:   710,  620
+           AP3:   400,   80
+           AP4:   103,  500
+           AP5:   130,  210
+           AP6:   980,  120
+Object8: Golde/Return => 0/0, PASS
+
+Scenario9(in):     X     Y
+        Object:   341,  996
+           AP1:   302,  423
+           AP2:   503,  521
+           AP3:   694,  768
+           AP4:    10,  664
+           AP5:    43, 1003
+           AP6:   694, 1023
+Object9: Golde/Return => 1/1, PASS
+
+Scenario10(out):    X     Y
+        Object:  1021,  680
+           AP1:   710,  620
+           AP2:   980,  120
+           AP3:   130,  210
+           AP4:   400,   80
+           AP5:   103,  500
+           AP6:   300,  800
+Object10: Golde/Return => 0/0, PASS
+
+Scenario11(in):     X     Y
+        Object:   152,  700
+           AP1:   302,  423
+           AP2:   694,  768
+           AP3:   694, 1023
+           AP4:   503,  521
+           AP5:    43, 1003
+           AP6:    10,  664
+Object11: Golde/Return => 1/1, PASS
+
+Scenario12(in):     X     Y
+        Object:   500,  675
+           AP1:   980,  120
+           AP2:   710,  620
+           AP3:   103,  500
+           AP4:   130,  210
+           AP5:   300,  800
+           AP6:   400,   80
+Object12: Golde/Return => 1/1, PASS
+
+Scenario13(out):    X     Y
+        Object:   632,  635
+           AP1:   694, 1023
+           AP2:    10,  664
+           AP3:   503,  521
+           AP4:   694,  768
+           AP5:   302,  423
+           AP6:    43, 1003
+Object13: Golde/Return => 0/0, PASS
+
+Scenario14(in):     X     Y
+        Object:   336,  492
+           AP1:   321,  870
+           AP2:  1010,  643
+           AP3:   321,  127
+           AP4:   432,  123
+           AP5:   567, 1003
+           AP6:   970,  280
+Object14: Golde/Return => 1/1, PASS
+
+Scenario15(out):    X     Y
+        Object:   420,  710
+           AP1:   755,  510
+           AP2:   103,   50
+           AP3:   103,  340
+           AP4:   298,  560
+           AP5:   982,  280
+           AP6:   710,   50
+Object15: Golde/Return => 0/0, PASS
+
+Scenario16(out):    X     Y
+        Object:   898,  992
+           AP1:   300,  800
+           AP2:   980,  120
+           AP3:   130,  210
+           AP4:   400,   80
+           AP5:   103,  500
+           AP6:   710,  620
+Object16: Golde/Return => 0/0, PASS
+
+Scenario17(out):    X     Y
+        Object:   872,  343
+           AP1:   103,  500
+           AP2:   130,  210
+           AP3:   400,   80
+           AP4:   710,  620
+           AP5:   980,  120
+           AP6:   300,  800
+Object17: Golde/Return => 0/0, PASS
+
+Scenario18(in):     X     Y
+        Object:   500,  675
+           AP1:   503,  521
+           AP2:   694,  768
+           AP3:   694, 1023
+           AP4:    43, 1003
+           AP5:    10,  664
+           AP6:   302,  423
+Object18: Golde/Return => 1/1, PASS
+
+Scenario19(in):     X     Y
+        Object:   623,  870
+           AP1:    43, 1003
+           AP2:   302,  423
+           AP3:    10,  664
+           AP4:   694, 1023
+           AP5:   694,  768
+           AP6:   503,  521
+Object19: Golde/Return => 1/1, PASS
+
+Scenario20(in):     X     Y
+        Object:   220,  320
+           AP1:   980,  120
+           AP2:   103,  500
+           AP3:   710,  620
+           AP4:   130,  210
+           AP5:   300,  800
+           AP6:   400,   80
+Object20: Golde/Return => 1/1, PASS
+
+Scenario21(out):    X     Y
+        Object:   400,  957
+           AP1:   432,  123
+           AP2:   321,  127
+           AP3:   567, 1003
+           AP4:   321,  870
+           AP5:   970,  280
+           AP6:  1010,  643
+Object21: Golde/Return => 0/0, PASS
+
+Scenario22(in):     X     Y
+        Object:   872,  225
+           AP1:   710,   50
+           AP2:   103,  340
+           AP3:   982,  280
+           AP4:   755,  510
+           AP5:   298,  560
+           AP6:   103,   50
+Object22: Golde/Return => 1/1, PASS
+
+Scenario23(in):     X     Y
+        Object:   400,  210
+           AP1:   982,  280
+           AP2:   103,   50
+           AP3:   755,  510
+           AP4:   710,   50
+           AP5:   103,  340
+           AP6:   298,  560
+Object23: Golde/Return => 1/1, PASS
+
+Scenario24(in):     X     Y
+        Object:   300,  492
+           AP1:   503,  521
+           AP2:    43, 1003
+           AP3:   302,  423
+           AP4:    10,  664
+           AP5:   694, 1023
+           AP6:   694,  768
+Object24: Golde/Return => 1/1, PASS
+
+Scenario25(out):    X     Y
+        Object:   782,  926
+           AP1:   321,  127
+           AP2:   567, 1003
+           AP3:   970,  280
+           AP4:  1010,  643
+           AP5:   432,  123
+           AP6:   321,  870
+Object25: Golde/Return => 0/0, PASS
+
+Scenario26(in):     X     Y
+        Object:   623,  870
+           AP1:   970,  280
+           AP2:   432,  123
+           AP3:  1010,  643
+           AP4:   321,  127
+           AP5:   321,  870
+           AP6:   567, 1003
+Object26: Golde/Return => 1/1, PASS
+
+Scenario27(out):    X     Y
+        Object:   500,  800
+           AP1:   755,  510
+           AP2:   103,   50
+           AP3:   982,  280
+           AP4:   710,   50
+           AP5:   103,  340
+           AP6:   298,  560
+Object27: Golde/Return => 0/0, PASS
+
+Scenario28(out):    X     Y
+        Object:    20,  625
+           AP1:   503,  521
+           AP2:   302,  423
+           AP3:   694, 1023
+           AP4:    10,  664
+           AP5:    43, 1003
+           AP6:   694,  768
+Object28: Golde/Return => 0/0, PASS
+
+Scenario29(out):    X     Y
+        Object:   220,  620
+           AP1:   567, 1003
+           AP2:   970,  280
+           AP3:   321,  870
+           AP4:   432,  123
+           AP5:  1010,  643
+           AP6:   321,  127
+Object29: Golde/Return => 0/0, PASS
+
+Scenario30(in):     X     Y
+        Object:   872,  343
+           AP1:   103,  340
+           AP2:   710,   50
+           AP3:   103,   50
+           AP4:   298,  560
+           AP5:   755,  510
+           AP6:   982,  280
+Object30: Golde/Return => 1/1, PASS
+
+Scenario31(out):    X     Y
+        Object:   100,  100
+           AP1:   503,  521
+           AP2:   694, 1023
+           AP3:    10,  664
+           AP4:    43, 1003
+           AP5:   694,  768
+           AP6:   302,  423
+Object31: Golde/Return => 0/0, PASS
+
+Scenario32(out):    X     Y
+        Object:   973,  768
+           AP1:   694, 1023
+           AP2:    10,  664
+           AP3:   503,  521
+           AP4:    43, 1003
+           AP5:   302,  423
+           AP6:   694,  768
+Object32: Golde/Return => 0/0, PASS
+
+Scenario33(in):     X     Y
+        Object:   632,  635
+           AP1:   321,  870
+           AP2:  1010,  643
+           AP3:   567, 1003
+           AP4:   970,  280
+           AP5:   321,  127
+           AP6:   432,  123
+Object33: Golde/Return => 1/1, PASS
+
+Scenario34(in):     X     Y
+        Object:   410,  510
+           AP1:   103,  500
+           AP2:   400,   80
+           AP3:   130,  210
+           AP4:   710,  620
+           AP5:   980,  120
+           AP6:   300,  800
+Object34: Golde/Return => 1/1, PASS
+
+Scenario35(in):     X     Y
+        Object:   220,  620
+           AP1:   503,  521
+           AP2:    43, 1003
+           AP3:   694, 1023
+           AP4:    10,  664
+           AP5:   694,  768
+           AP6:   302,  423
+Object35: Golde/Return => 1/1, PASS
+
+Scenario36(out):    X     Y
+        Object:  1021,   50
+           AP1:   103,   50
+           AP2:   298,  560
+           AP3:   710,   50
+           AP4:   103,  340
+           AP5:   982,  280
+           AP6:   755,  510
+Object36: Golde/Return => 0/0, PASS
+
+Scenario37(out):    X     Y
+        Object:   782,  926
+           AP1:    10,  664
+           AP2:   694,  768
+           AP3:    43, 1003
+           AP4:   694, 1023
+           AP5:   302,  423
+           AP6:   503,  521
+Object37: Golde/Return => 0/0, PASS
+
+Scenario38(out):    X     Y
+        Object:   300,  910
+           AP1:   400,   80
+           AP2:   300,  800
+           AP3:   103,  500
+           AP4:   980,  120
+           AP5:   130,  210
+           AP6:   710,  620
+Object38: Golde/Return => 0/0, PASS
+
+Scenario39(in):     X     Y
+        Object:   641,  220
+           AP1:   321,  870
+           AP2:   567, 1003
+           AP3:   321,  127
+           AP4:   432,  123
+           AP5:   970,  280
+           AP6:  1010,  643
+Object39: Golde/Return => 1/1, PASS
+
+Scenario40(in):     X     Y
+        Object:   872,  225
+           AP1:   400,   80
+           AP2:   103,  500
+           AP3:   710,  620
+           AP4:   130,  210
+           AP5:   300,  800
+           AP6:   980,  120
+Object40: Golde/Return => 1/1, PASS
+
+Scenario41(out):    X     Y
+        Object:   645,  166
+           AP1:   970,  280
+           AP2:   321,  870
+           AP3:   432,  123
+           AP4:   321,  127
+           AP5:  1010,  643
+           AP6:   567, 1003
+Object41: Golde/Return => 0/0, PASS
+
+Scenario42(out):    X     Y
+        Object:   973,  799
+           AP1:   321,  127
+           AP2:   321,  870
+           AP3:   970,  280
+           AP4:   567, 1003
+           AP5:   432,  123
+           AP6:  1010,  643
+Object42: Golde/Return => 0/0, PASS
+
+Scenario43(in):     X     Y
+        Object:   792,  499
+           AP1:   567, 1003
+           AP2:   321,  127
+           AP3:  1010,  643
+           AP4:   321,  870
+           AP5:   432,  123
+           AP6:   970,  280
+Object43: Golde/Return => 1/1, PASS
+
+Scenario44(in):     X     Y
+        Object:   400,  210
+           AP1:   710,  620
+           AP2:   130,  210
+           AP3:   300,  800
+           AP4:   103,  500
+           AP5:   400,   80
+           AP6:   980,  120
+Object44: Golde/Return => 1/1, PASS
+
+Scenario45(out):    X     Y
+        Object:   645,  100
+           AP1:    10,  664
+           AP2:   694, 1023
+           AP3:   503,  521
+           AP4:   694,  768
+           AP5:   302,  423
+           AP6:    43, 1003
+Object45: Golde/Return => 0/0, PASS
+
+Scenario46(out):    X     Y
+        Object:   220,  720
+           AP1:   980,  120
+           AP2:   710,  620
+           AP3:   300,  800
+           AP4:   103,  500
+           AP5:   130,  210
+           AP6:   400,   80
+Object46: Golde/Return => 0/0, PASS
+
+Scenario47(out):    X     Y
+        Object:   130,   80
+           AP1:   103,  500
+           AP2:   300,  800
+           AP3:   400,   80
+           AP4:   130,  210
+           AP5:   710,  620
+           AP6:   980,  120
+Object47: Golde/Return => 0/0, PASS
+
+Scenario48(in):     X     Y
+        Object:   500,  675
+           AP1:   321,  870
+           AP2:  1010,  643
+           AP3:   321,  127
+           AP4:   567, 1003
+           AP5:   432,  123
+           AP6:   970,  280
+Object48: Golde/Return => 1/1, PASS
+
+Scenario49(out):    X     Y
+        Object:   100,  100
+           AP1:   567, 1003
+           AP2:  1010,  643
+           AP3:   321,  127
+           AP4:   432,  123
+           AP5:   321,  870
+           AP6:   970,  280
+Object49: Golde/Return => 0/0, PASS
+
+Scenario50(out):    X     Y
+        Object:   321, 1000
+           AP1:   321,  870
+           AP2:   432,  123
+           AP3:   970,  280
+           AP4:   567, 1003
+           AP5:   321,  127
+           AP6:  1010,  643
+Object50: Golde/Return => 0/0, PASS
+
+-------------------------------------------------
+--    Simulation finish,  ALL PASS             --
+-------------------------------------------------
+Simulation complete via $finish(1) at time 55650 NS + 0
+./tb.sv:149              $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Dec 24, 2021 at 14:00:22 CST  (total: 00:00:02)

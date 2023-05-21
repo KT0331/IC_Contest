@@ -1,0 +1,49 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay min
+        -max_paths 1
+Design : geofence
+Version: L-2016.03
+Date   : Fri Dec 24 14:00:17 2021
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: X_temp_reg[2][0]
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: X_temp_reg[2][0]
+            (rising edge-triggered flip-flop clocked by clk)
+  Path Group: clk
+  Path Type: min
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  geofence           tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  X_temp_reg[2][0]/CK (DFFRX1)             0.00       0.50 r
+  X_temp_reg[2][0]/QN (DFFRX1)             0.41       0.91 r
+  U2201/Y (OAI22XL)                        0.20       1.12 f
+  X_temp_reg[2][0]/D (DFFRX1)              0.00       1.12 f
+  data arrival time                                   1.12
+
+  clock clk (rise edge)                    0.00       0.00
+  clock network delay (ideal)              0.50       0.50
+  clock uncertainty                        0.10       0.60
+  X_temp_reg[2][0]/CK (DFFRX1)             0.00       0.60 r
+  library hold time                       -0.07       0.53
+  data required time                                  0.53
+  -----------------------------------------------------------
+  data required time                                  0.53
+  data arrival time                                  -1.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.58
+
+
+1

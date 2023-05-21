@@ -1,0 +1,534 @@
+
+                           Design Compiler Graphical 
+                                 DC Ultra (TM)
+                                  DFTMAX (TM)
+                              Power Compiler (TM)
+                                 DesignWare (R)
+                                 DC Expert (TM)
+                               Design Vision (TM)
+                               HDL Compiler (TM)
+                               VHDL Compiler (TM)
+                                  DFT Compiler
+                               Design Compiler(R)
+
+                 Version T-2022.03 for linux64 - Feb 22, 2022 
+
+                    Copyright (c) 1988 - 2022 Synopsys, Inc.
+   This software and the associated documentation are proprietary to Synopsys,
+ Inc. This software may only be used in accordance with the terms and conditions
+ of a written license agreement with Synopsys, Inc. All other use, reproduction,
+   or distribution of this software is strictly prohibited.  Licensed Products
+     communicate with Synopsys servers for the purpose of providing software
+    updates, detecting software piracy and verifying that customers are using
+    Licensed Products in conformity with the applicable License Key for such
+  Licensed Products. Synopsys will use information gathered in connection with
+    this process to deliver software updates and pursue software pirates and
+                                   infringers.
+
+ Inclusivity & Diversity - Visit SolvNetPlus to read the "Synopsys Statement on
+            Inclusivity and Diversity" (Refer to article 000036315 at
+                        https://solvnetplus.synopsys.com)
+Initializing...
+Initializing gui preferences from file  /home/nuivtrain/.synopsys_dc_gui/preferences.tcl
+#Read All Files
+read_verilog LCD_CTRL.v
+Loading db file '/home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+Loading db file '/home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/gtech.db'
+Loading db file '/usr/cad/synopsys/synthesis/2022.03/libraries/syn/standard.sldb'
+  Loading link library 'slow'
+  Loading link library 'fast'
+  Loading link library 'gtech'
+Loading verilog file '/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'
+Detecting input file type automatically (-rtl or -netlist).
+Reading with Presto HDL Compiler (equivalent to -rtl option).
+Running PRESTO HDLC
+Compiling source file /home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v
+Warning:  /home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v:88: DEFAULT branch of CASE statement cannot be reached. (ELAB-311)
+
+Statistics for case statements in always block at line 87 in file
+	'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|            88            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 230 in file
+	'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           246            |    auto/auto     |
+===============================================
+
+Statistics for case statements in always block at line 304 in file
+	'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'
+===============================================
+|           Line           |  full/ parallel  |
+===============================================
+|           310            |    auto/auto     |
+===============================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 78 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     c_state_reg     | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 119 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     IROM_rd_reg     | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 133 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     IROM_A_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 147 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   IRAM_valid_reg    | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 165 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|   IRAM_A_buff_reg   | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 179 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|     IRAM_A_reg      | Flip-flop |   6   |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 193 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      busy_reg       | Flip-flop |   1   |  N  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 213 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      done_reg       | Flip-flop |   1   |  N  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 230 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|      data_reg       | Flip-flop |  512  |  Y  | N  | Y  | N  | N  | N  | N  |
+===============================================================================
+
+Inferred memory devices in process
+	in routine LCD_CTRL line 304 in file
+		'/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.v'.
+===============================================================================
+|    Register Name    |   Type    | Width | Bus | MB | AR | AS | SR | SS | ST |
+===============================================================================
+|       P0_reg        | Flip-flop |   2   |  Y  | N  | Y  | N  | N  | N  | N  |
+|       P0_reg        | Flip-flop |   4   |  Y  | N  | N  | Y  | N  | N  | N  |
+===============================================================================
+Statistics for MUX_OPs
+======================================================
+| block name/line  | Inputs | Outputs | # sel inputs |
+======================================================
+|   LCD_CTRL/162   |   64   |    8    |      6       |
+|   LCD_CTRL/248   |   64   |    8    |      6       |
+|   LCD_CTRL/254   |   64   |    8    |      6       |
+|   LCD_CTRL/266   |   64   |    8    |      6       |
+|   LCD_CTRL/267   |   64   |    8    |      6       |
+|   LCD_CTRL/268   |   64   |    8    |      6       |
+|   LCD_CTRL/269   |   64   |    8    |      6       |
+======================================================
+Presto compilation completed successfully.
+Current design is now '/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.db:LCD_CTRL'
+Loaded 1 design.
+Current design is 'LCD_CTRL'.
+LCD_CTRL
+current_design LCD_CTRL
+Current design is 'LCD_CTRL'.
+{LCD_CTRL}
+link
+
+  Linking design 'LCD_CTRL'
+  Using the following designs and libraries:
+  --------------------------------------------------------------------------
+  LCD_CTRL                    /home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL.db
+  slow (library)              /home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db
+  fast (library)              /home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db
+  dw_foundation.sldb (library) /usr/cad/synopsys/synthesis/2022.03/libraries/syn/dw_foundation.sldb
+
+1
+#Setting Clock Constraints
+source -echo -verbose LCD_CTRL.sdc
+# operating conditions and boundary conditions #
+set cycle  10.0        ;#clock period defined by designer
+10.0
+create_clock -period $cycle [get_ports  clk]
+1
+set_dont_touch_network      [get_clocks clk]
+1
+set_clock_uncertainty  0.1  [get_clocks clk]
+1
+set_clock_latency      0.5  [get_clocks clk]
+1
+set_input_delay  5      -clock clk [remove_from_collection [all_inputs] [get_ports clk]]
+1
+set_output_delay 0.5    -clock clk [all_outputs] 
+1
+set_load         1     [all_outputs]
+1
+set_drive        1     [all_inputs]
+1
+set_operating_conditions  -max slow  -min fast
+Using operating conditions 'slow' found in library 'slow'.
+Using operating conditions 'fast' found in library 'fast'.
+1
+set_wire_load_model -name tsmc13_wl10 -library slow                        
+1
+set_max_fanout 20 [all_inputs]
+1
+1
+#Synthesis all design
+compile -map_effort high -area_effort high
+Information: Checking out the license 'DesignWare'. (SEC-104)
+Information: Evaluating DesignWare library utilization. (UISN-27)
+
+============================================================================
+| DesignWare Building Block Library  |         Version         | Available |
+============================================================================
+| Basic DW Building Blocks           | S-2021.06-DWBB_202106.0 |     *     |
+| Licensed DW Building Blocks        | S-2021.06-DWBB_202106.0 |     *     |
+============================================================================
+
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 11134                                  |
+| Number of User Hierarchies                              | 0                                      |
+| Sequential Cell Count                                   | 537                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 4362                                   |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 8 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition slow set on design LCD_CTRL has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping
+  ------------------------
+  Processing 'LCD_CTRL'
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Implementation Selection
+  ----------------------------------
+  Processing 'LCD_CTRL_DW01_sub_0'
+  Processing 'LCD_CTRL_DW01_add_0'
+  Mapping 'LCD_CTRL_DW_cmp_0'
+  Processing 'LCD_CTRL_DW01_sub_1'
+  Mapping 'LCD_CTRL_DW_cmp_1'
+  Processing 'LCD_CTRL_DW01_inc_0'
+  Processing 'LCD_CTRL_DW01_inc_1'
+  Processing 'LCD_CTRL_DW01_cmp6_0'
+  Processing 'LCD_CTRL_DW01_cmp6_1'
+  Processing 'LCD_CTRL_DW01_cmp6_2'
+  Processing 'LCD_CTRL_DW01_cmp6_3'
+  Processing 'LCD_CTRL_DW01_cmp6_4'
+  Processing 'LCD_CTRL_DW01_cmp6_5'
+  Processing 'LCD_CTRL_DW01_cmp6_6'
+  Processing 'LCD_CTRL_DW01_add_1'
+  Processing 'LCD_CTRL_DW01_cmp6_7'
+  Processing 'LCD_CTRL_DW01_add_2'
+  Processing 'LCD_CTRL_DW01_cmp6_8'
+  Processing 'LCD_CTRL_DW01_inc_2'
+  Building model 'DW01_NAND2'
+  Processing 'DW01_NAND2'
+  Building model 'DW01_add_width10' (rpl)
+  Processing 'DW01_add_width10'
+  Building model 'DW01_add_width9' (rpl)
+  Processing 'DW01_add_width9'
+  Processing 'LCD_CTRL_DW01_add_3'
+  Processing 'LCD_CTRL_DW01_add_4'
+  Processing 'LCD_CTRL_DW01_add_5'
+
+  Beginning Mapping Optimizations  (High effort)
+  -------------------------------
+Information: Added key list 'DesignWare' to design 'LCD_CTRL'. (DDB-72)
+Loading db file '/home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db'
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:24  162780.7      0.00       0.0   15995.2                          
+    0:00:24  162780.7      0.00       0.0   15995.2                          
+    0:00:24  162780.7      0.00       0.0   15995.2                          
+    0:00:24  162780.7      0.00       0.0   15995.2                          
+    0:00:24  162780.7      0.00       0.0   15995.2                          
+    0:00:26   87798.0      5.39    2621.8   15393.4                          
+    0:00:27   89437.7      5.47    2682.1   15296.9                          
+    0:00:27   89093.1      4.93    2404.7   15296.9                          
+    0:00:28   89125.4      4.82    2394.3   15296.9                          
+    0:00:28   89028.6      4.87    2329.8   15296.9                          
+    0:00:28   89094.8      4.85    2382.6   15296.9                          
+    0:00:28   89093.1      4.74    2303.1   15296.9                          
+    0:00:29   89118.6      4.55    2200.4   15296.9                          
+    0:00:29   89162.7      4.65    2273.8   15296.9                          
+    0:00:29   88986.2      4.49    2133.3   15296.9                          
+    0:00:29   89045.6      4.19    2019.3   15296.9                          
+    0:00:29   89040.5      3.89    1873.3   15296.9                          
+    0:00:29   89086.3      3.84    1857.6   15296.9                          
+    0:00:29   89096.5      3.82    1817.8   15296.9                          
+    0:00:29   89118.6      3.79    1799.1   15296.9                          
+    0:00:29   89186.5      3.74    1795.9   15296.9                          
+    0:00:30   89213.6      3.73    1767.2   15296.9                          
+    0:00:30   89251.0      3.73    1762.8   15296.9                          
+    0:00:30   89251.0      3.73    1762.8   15296.9                          
+    0:00:30   89251.0      3.73    1762.8   15296.9                          
+    0:00:30   89251.0      3.73    1762.8   15296.9                          
+    0:00:30   89290.0      3.74    1775.3    5306.7                          
+    0:00:30   89313.8      3.74    1773.3    2215.0                          
+    0:00:30   89427.5      3.70    1741.3    1455.3                          
+    0:00:30   89437.7      3.70    1741.3     727.7                          
+    0:00:30   89447.9      3.70    1741.3       0.0                          
+    0:00:30   89447.9      3.70    1741.3       0.0                          
+    0:00:30   89447.9      3.70    1741.3       0.0                          
+    0:00:30   89447.9      3.70    1741.3       0.0                          
+    0:00:30   89867.1      3.30    1547.1       0.0 data_reg[17][6]/D        
+    0:00:31   90345.8      3.05    1441.8       1.8 data_reg[44][5]/D        
+    0:00:31   91291.3      2.95    1395.3       1.8 data_reg[29][7]/D        
+    0:00:32   92068.7      2.77    1329.8       1.8 data_reg[13][6]/D        
+    0:00:32   92350.4      2.68    1300.3       1.8 data_reg[9][6]/D         
+    0:00:33   95848.8      1.95     931.5      63.5 data_reg[33][1]/D        
+    0:00:34   98602.0      1.22     554.5      79.5 data_reg[21][4]/D        
+    0:00:35  101115.8      0.67     283.5     116.2 data_reg[20][6]/D        
+    0:00:36  102619.7      0.34     113.5     147.2 data_reg[53][2]/D        
+    0:00:37  103619.5      0.16      40.9     275.8 data_reg[48][2]/D        
+    0:00:38  104023.5      0.04       3.1     367.4 data_reg[53][3]/D        
+    0:00:39  104071.0      0.00       0.0     367.8                          
+
+
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:39  104071.0      0.00       0.0     367.8                          
+    0:00:39  104071.0      0.00       0.0     367.8                          
+    0:00:39  104018.4      0.00       0.0    3646.6                          
+    0:00:39  104018.4      0.00       0.0    3646.6                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:39  104018.4      0.00       0.0    3646.6                          
+    0:00:39  104060.8      0.00       0.0     158.9 data[25][0]              
+    0:00:40  104021.8      0.00       0.0     152.5 n279                     
+    0:00:40  104015.0      0.00       0.0     152.2 data[21][2]              
+    0:00:41  104011.6      0.00       0.0      91.5 net49938                 
+    0:00:41  104069.3      0.00       0.0       0.0                          
+
+
+  Beginning Area-Recovery Phase  (cleanup)
+  -----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:41  104069.3      0.00       0.0       0.0                          
+    0:00:41  104069.3      0.00       0.0       0.0                          
+    0:00:41  100375.7      0.27      61.1       0.0                          
+    0:00:42   98680.0      0.18      27.0       0.0                          
+    0:00:42   97828.0      0.16      24.9       0.0                          
+    0:00:42   97464.7      0.16      24.9       0.0                          
+    0:00:42   97220.3      0.16      25.0       0.0                          
+    0:00:42   97018.3      0.12      22.6       0.0                          
+    0:00:42   96906.3      0.12      22.6       0.0                          
+    0:00:42   96818.0      0.12      22.6       0.0                          
+    0:00:42   96780.7      0.12      22.6       0.0                          
+    0:00:42   96767.1      0.12      22.6       0.0                          
+    0:00:42   96767.1      0.12      22.6       0.0                          
+    0:00:43   97026.8      0.01       0.0       0.0 data_reg[58][5]/D        
+    0:00:43   97077.7      0.00       0.0       0.0                          
+    0:00:44   90729.4      1.96     485.5       0.0                          
+    0:00:44   90145.5      2.04     519.1       0.0                          
+    0:00:44   90084.4      2.04     520.2       0.0                          
+    0:00:44   90077.6      2.04     520.2       0.0                          
+    0:00:44   90077.6      2.04     520.2       0.0                          
+    0:00:44   90077.6      2.04     520.2       0.0                          
+    0:00:44   90077.6      2.04     520.2       0.0                          
+    0:00:44   90077.6      2.04     520.2       0.0                          
+    0:00:44   90595.3      0.85     355.2       0.0 data_reg[43][7]/D        
+    0:00:45   91162.3      0.56     242.3       0.0 data_reg[36][1]/D        
+    0:00:45   91556.1      0.41     166.8       0.0 data_reg[51][1]/D        
+    0:00:45   91978.7      0.28     105.9       0.0 data_reg[3][6]/D         
+    0:00:46   92280.8      0.23      82.1       0.0 data_reg[24][2]/D        
+    0:00:46   92873.2      0.19      68.5       0.0 data_reg[7][3]/D         
+    0:00:47   94416.2      0.00       0.0       0.0                          
+Loading db file '/home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+compile -map_effort high -area_effort high -inc
+====================================================================================================
+| Flow Information                                                                                 |
+----------------------------------------------------------------------------------------------------
+| Flow         | Design Compiler                                                                   |
+====================================================================================================
+| Design Information                                      | Value                                  |
+====================================================================================================
+| Number of Scenarios                                     | 0                                      |
+| Leaf Cell Count                                         | 7053                                   |
+| Number of User Hierarchies                              | 3                                      |
+| Sequential Cell Count                                   | 537                                    |
+| Macro Count                                             | 0                                      |
+| Number of Power Domains                                 | 0                                      |
+| Number of Path Groups                                   | 2                                      |
+| Number of VT class                                      | 0                                      |
+| Number of Clocks                                        | 1                                      |
+| Number of Dont Touch cells                              | 0                                      |
+| Number of Dont Touch nets                               | 1                                      |
+| Number of size only cells                               | 0                                      |
+| Design with UPF Data                                    | false                                  |
+====================================================================================================
+
+Information: There are 34 potential problems in your design. Please run 'check_design' for more information. (LINT-99)
+
+
+Warning: Operating condition slow set on design LCD_CTRL has different process,
+voltage and temperatures parameters than the parameters at which target library 
+fast is characterized. Delays may be inaccurate as a result. (OPT-998)
+
+  Beginning Pass 1 Mapping  (Incremental)
+  ------------------------
+
+  Updating timing information
+Information: Updating design information... (UID-85)
+
+  Beginning Mapping Optimizations  (High effort)  (Incremental)
+  -------------------------------
+
+  Beginning Incremental Implementation Selection
+  ----------------------------------------------
+  Selecting implementations
+  Building model 'DW01_NAND2'
+  Building model 'DW01_add_width10' (rpl)
+
+  Beginning Delay Optimization Phase
+  ----------------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:01   94429.8      0.00       0.0       0.0                          
+    0:00:01   94429.8      0.00       0.0       0.0                          
+    0:00:02   94387.3      0.00      -0.0    2151.6                          
+
+
+  Beginning Design Rule Fixing  (max_transition)  (max_capacitance)
+  ----------------------------
+
+                                  TOTAL                                      
+   ELAPSED            WORST NEG   SETUP    DESIGN                            
+    TIME      AREA      SLACK     COST    RULE COST         ENDPOINT         
+  --------- --------- --------- --------- --------- -------------------------
+    0:00:02   94387.3      0.00      -0.0    2151.6                          
+    0:00:02   94448.4      0.00      -0.0       0.0                          
+Loading db file '/home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/fast.db'
+Loading db file '/home/nuivtrain/4108064101/CBDK_IC_Contest_v2.1/SynopsysDC/db/slow.db'
+
+
+Note: Symbol # after min delay cost means estimated hold TNS across all active scenarios 
+
+
+  Optimization Complete
+  ---------------------
+1
+write -format ddc     -hierarchy -output "LCD_CTRL_syn.ddc"
+Writing ddc file 'LCD_CTRL_syn.ddc'.
+1
+write_sdf LCD_CTRL_syn.sdf
+Information: Annotated 'cell' delays are assumed to include load delay. (UID-282)
+Information: Writing timing information to file '/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL_syn.sdf'. (WT-3)
+Information: Updating design information... (UID-85)
+1
+write_file -format verilog -hierarchy -output LCD_CTRL_syn.v
+Writing verilog file '/home/nuivtrain/4108064101/E_ICC2018_priliminary_univ_cell/LCD_CTRL_syn.v'.
+Warning: Verilog writer has added 3 nets to module LCD_CTRL using SYNOPSYS_UNCONNECTED_ as prefix.  Please use the change_names command to make the correct changes before invoking the verilog writer.  (VO-11)
+1
+report_area > area.log
+report_timing > timing.log
+report_qor   >  LCD_CTRL_syn.qor
+dc_shell> exit
+
+Memory usage for this session 449 Mbytes.
+Memory usage for this session including child processes 449 Mbytes.
+CPU usage for this session 54 seconds ( 0.01 hours ).
+Elapsed time for this session 84 seconds ( 0.02 hours ).
+
+Thank you...

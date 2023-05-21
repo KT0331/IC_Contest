@@ -1,2 +1,2 @@
-IC Contest 2018
-The task requires designing an Dmage Display Control.
+2018 IC Contest
+This task requires designing an Dmage Display Control.

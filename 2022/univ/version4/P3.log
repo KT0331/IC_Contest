@@ -1,0 +1,146 @@
+ncverilog(64): 15.20-s039: (c) Copyright 1995-2017 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s039: Started on Jun 17, 2022 at 16:38:04 CST
+ncverilog
+	-sv
+	tb.sv
+	JAM_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+	+define+P3
+Recompiling... reason: file './JAM_syn.sdf' is newer than expected.
+	expected: Fri Jun 17 16:34:24 2022
+	actual:   Fri Jun 17 16:37:40 2022
+file: JAM_syn.v
+	module worklib.JAM:v
+		errors: 0, warnings: 0
+file: tsmc13_neg.v
+	module tsmc13_neg.BUFX16:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.AOI32XL:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR2X8:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.NOR3X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.XOR2X2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CLKINVX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDHX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFHX1:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFHX2:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.ADDFHX4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.CMPR22X4:v
+		errors: 0, warnings: 0
+	module tsmc13_neg.DFFX2:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./JAM_syn.sdf"
+	Compiled SDF file "JAM_syn.sdf.X" older than source SDF file "./JAM_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "JAM_syn.sdf.X".
+        .MinCost(MinCost),
+                       |
+ncelab: *W,CUVMPW (./tb.sv,40|23): port sizes differ in port connection (9/10).
+	Annotating SDF timing data:
+		Compiled SDF file:     JAM_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_JAM
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 2263  Annotated = 100.00% -- No. of Tchecks = 268  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        2263	        2263	      100.00
+		      $width	         134	         134	      100.00
+		  $setuphold	         134	         134	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		tsmc13_neg.ADDFHX1:v <0x4d7534f0>
+			streams:   0, words:     0
+		tsmc13_neg.ADDFHX2:v <0x24b69965>
+			streams:   0, words:     0
+		tsmc13_neg.ADDFHX4:v <0x392138c6>
+			streams:   0, words:     0
+		tsmc13_neg.ADDFX2:v <0x6f3b19ac>
+			streams:   0, words:     0
+		tsmc13_neg.ADDHX1:v <0x35e94367>
+			streams:   0, words:     0
+		tsmc13_neg.ADDHX2:v <0x1f5a5691>
+			streams:   0, words:     0
+		tsmc13_neg.CLKXOR2X2:v <0x2b28016a>
+			streams:   0, words:     0
+		tsmc13_neg.CMPR22X4:v <0x27c34215>
+			streams:   0, words:     0
+		tsmc13_neg.DFFX2:v <0x4386a11f>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2X1:v <0x4a320c05>
+			streams:   0, words:     0
+		tsmc13_neg.XOR2X2:v <0x161a54bf>
+			streams:   0, words:     0
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                  838      92
+		UDPs:                      67       1
+		Primitives:              1525       8
+		Timing outputs:           846      29
+		Registers:                 93      31
+		Scalar wires:             917       -
+		Expanded wires:             7       1
+		Vectored wires:             1       -
+		Always blocks:              3       3
+		Initial blocks:             7       7
+		Cont. assignments:          1       1
+		Pseudo assignments:         1       1
+		Timing checks:            402      69
+		Interconnect:            2202       -
+		Delayed tcheck signals:   134      68
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+*Verdi* Loading libsscore_ius152.so
+ncsim> source /usr/cad/cadence/INCISIV/cur/tools/inca/files/ncsimrc
+ncsim> run
+*******************************
+** Simulation Start          **
+*******************************
+PATTERN:   3
+-------------- Cost Table --------------
+Jobs       0   1   2   3   4   5   6   7
+worker0:  81  60  60  65  96  60  65  96
+worker1:  96  60  66  96  60  60  60  81
+worker2:  96  66  60  99  60  81  65  65
+worker3:  66  96  80  99  81  81  96  60
+worker4:  81  96  65  96  60  96  60  81
+worker5:  60  96  80  96  80  60  81  60
+worker6:  99  60  99  65  80  80  81  66
+worker7:  65  60  60  99  99  80  60  96
+----------------------------------------------------------------------
+Get Valid at cycle:    322565
+receive MinCost/MatchCount= 485/ 9 , golden MinCost/MatchCount= 485/ 9
+----------------------------------------------------------------------
+*************************
+**  FUNCTION  CORRECT  **
+*************************
+
+Simulation complete via $finish(1) at time 3225645 NS + 0
+./tb.sv:180                 $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s039: Exiting on Jun 17, 2022 at 16:38:15 CST  (total: 00:00:11)

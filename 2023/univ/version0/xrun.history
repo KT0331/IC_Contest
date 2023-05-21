@@ -1,0 +1,1 @@
+s1(21Apr2023:14:57:27):  xrun tb.sv LASER_syn.v +define+USECOLOR+SDF +access+r -clean -createdebugdb -v /home/nuivtrain/Documents/CBDK_IC_Contest_v2.5/Verilog/tsmc13_neg.v +ncmaxdelays 

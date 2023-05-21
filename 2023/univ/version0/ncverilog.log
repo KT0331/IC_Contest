@@ -1,0 +1,104 @@
+ncverilog(64): 15.20-s084: (c) Copyright 1995-2020 Cadence Design Systems, Inc.
+TOOL:	ncverilog	15.20-s084: Started on Apr 01, 2023 at 01:01:54 CST
+ncverilog
+	-sv
+	tb.sv
+	LASER_syn.v
+	-v
+	tsmc13_neg.v
+	+define+SDF
+	+maxdelays
+file: tb.sv
+	module worklib.testfixture:sv
+		errors: 0, warnings: 0
+file: LASER_syn.v
+	module worklib.LASER:v
+		errors: 0, warnings: 0
+		Caching library 'worklib' ....... Done
+		Caching library 'tsmc13_neg' ....... Done
+	Elaborating the design hierarchy:
+ncelab: *W,DSEMEL: This SystemVerilog design will be simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+	Reading SDF file from location "./LASER_syn.sdf"
+	Compiled SDF file "LASER_syn.sdf.X" older than source SDF file "./LASER_syn.sdf".
+	Recompiling.
+	Writing compiled SDF file to "LASER_syn.sdf.X".
+	Annotating SDF timing data:
+		Compiled SDF file:     LASER_syn.sdf.X
+		Log file:              
+		Backannotation scope:  testfixture.u_LASER
+		Configuration file:    
+		MTM control:           
+		Scale factors:         
+		Scale type:            
+	Annotation completed successfully...
+	SDF statistics: No. of Pathdelays = 6295  Annotated = 100.00% -- No. of Tchecks = 1800  Annotated = 100.00% 
+				        Total 	   Annotated	  Percentage
+		 Path Delays	        6295	        6295	      100.00
+		      $width	         900	         900	      100.00
+		  $setuphold	         900	         900	      100.00
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+		worklib.testfixture:sv <0x2e3fb02f>
+			streams:  27, words: 47260
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                    Instances  Unique
+		Modules:                 2337      92
+		UDPs:                     450       1
+		Primitives:              5358       7
+		Timing outputs:          2374      22
+		Registers:                495      50
+		Scalar wires:            2828       -
+		Expanded wires:             8       2
+		Vectored wires:             2       -
+		Always blocks:              3       3
+		Initial blocks:            12      12
+		Cont. assignments:          2       2
+		Pseudo assignments:         1       1
+		Timing checks:           2700     452
+		Interconnect:            6404       -
+		Delayed tcheck signals:   900     451
+		Simulation timescale:     1ps
+	Writing initial simulation snapshot: worklib.testfixture:sv
+Loading snapshot worklib.testfixture:sv .................... Done
+ncsim: *W,DSEM2009: This SystemVerilog design is simulated as per IEEE 1800-2009 SystemVerilog simulation semantics. Use -disable_sem2009 option for turning off SV 2009 simulation semantics.
+ncsim> source /usr/cad/cadence/INCISIV/INCISIVE_15.20.084/tools/inca/files/ncsimrc
+ncsim> run
+*******************************
+** Simulation Start          **
+*******************************
+== PATTERN img1.pattern
+---- Used Cycle:       6116
+---- Get Return: C1( 4,10),C2(11,12)
+---- cover =  30, optimum =  30
+== PATTERN img2.pattern
+---- Used Cycle:       4587
+---- Get Return: C1(11, 6),C2( 5,11)
+---- cover =  28, optimum =  28
+== PATTERN img3.pattern
+---- Used Cycle:       6116
+---- Get Return: C1(10, 5),C2( 5,10)
+---- cover =  29, optimum =  29
+== PATTERN img4.pattern
+---- Used Cycle:       3058
+---- Get Return: C1(10, 5),C2( 5, 5)
+---- cover =  30, optimum =  30
+== PATTERN img5.pattern
+---- Used Cycle:      10703
+---- Get Return: C1( 8,12),C2( 2,10)
+---- cover =  23, optimum =  23
+== PATTERN img6.pattern
+---- Used Cycle:       6116
+---- Get Return: C1(13, 2),C2( 9, 9)
+---- cover =  30, optimum =  30
+
+*******************************
+**   Finish Simulation       **
+**   RUN CYCLE =      36951  **
+**   Cover total = 170/170   **
+*******************************
+Simulation complete via $finish(1) at time 295604 NS + 0
+./tb.sv:254                  $finish;
+ncsim> exit
+TOOL:	ncverilog	15.20-s084: Exiting on Apr 01, 2023 at 01:01:57 CST  (total: 00:00:03)

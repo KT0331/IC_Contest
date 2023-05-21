@@ -1,0 +1,78 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : LASER
+Version: T-2022.03
+Date   : Fri Apr 21 14:56:07 2023
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: c_state_reg[1]
+              (rising edge-triggered flip-flop clocked by CLK)
+  Endpoint: C1_inboolean_reg[5]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  LASER              tsmc13_wl10           slow
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock CLK (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.50       0.50
+  c_state_reg[1]/CK (DFFQX4)                              0.00       0.50 r
+  c_state_reg[1]/Q (DFFQX4)                               0.36       0.86 r
+  U1070/Y (INVX4)                                         0.15       1.01 f
+  U1205/Y (AND3X8)                                        0.17       1.17 f
+  U1069/Y (INVX12)                                        0.20       1.37 r
+  U1126/Y (NAND2X8)                                       0.12       1.49 f
+  U1090/Y (NAND2BX1)                                      0.29       1.77 r
+  U1129/Y (BUFX20)                                        0.49       2.27 r
+  U1140/Y (OAI221X4)                                      0.40       2.67 f
+  compa_inst[5].u_compa/py[1] (compa_4)                   0.00       2.67 f
+  compa_inst[5].u_compa/U47/Y (CLKINVX4)                  0.09       2.77 r
+  compa_inst[5].u_compa/U28/Y (NOR2XL)                    0.14       2.91 f
+  compa_inst[5].u_compa/U73/Y (OAI22XL)                   0.56       3.46 r
+  compa_inst[5].u_compa/U51/Y (OAI2BB1X2)                 0.16       3.63 f
+  compa_inst[5].u_compa/U50/Y (OAI21X2)                   0.14       3.77 r
+  compa_inst[5].u_compa/U49/Y (OAI2BB1X2)                 0.13       3.90 f
+  compa_inst[5].u_compa/U48/Y (OAI21X4)                   0.26       4.16 r
+  compa_inst[5].u_compa/U3/Y (INVX12)                     0.16       4.32 f
+  compa_inst[5].u_compa/U8/Y (AOI2BB2X1)                  0.41       4.73 f
+  compa_inst[5].u_compa/U6/Y (NAND2X4)                    0.29       5.03 r
+  compa_inst[5].u_compa/U26/Y (NOR2X6)                    0.08       5.11 f
+  compa_inst[5].u_compa/U25/Y (AOI2BB2X4)                 0.22       5.33 f
+  compa_inst[5].u_compa/U29/Y (OAI2BB1X1)                 0.26       5.59 f
+  compa_inst[5].u_compa/U72/Y (OAI21XL)                   0.32       5.91 r
+  compa_inst[5].u_compa/U18/Y (OAI211X1)                  0.27       6.19 f
+  compa_inst[5].u_compa/U27/Y (INVX1)                     0.31       6.50 r
+  compa_inst[5].u_compa/U36/S (ADDFX1)                    0.56       7.06 f
+  compa_inst[5].u_compa/U85/Y (NOR3X1)                    0.32       7.39 r
+  compa_inst[5].u_compa/U15/Y (OR2X2)                     0.24       7.62 r
+  compa_inst[5].u_compa/in_circle (compa_4)               0.00       7.62 r
+  U1074/Y (INVX4)                                         0.15       7.78 f
+  U1640/Y (OAI22XL)                                       0.48       8.26 r
+  C1_inboolean_reg[5]/D (DFFXL)                           0.00       8.26 r
+  data arrival time                                                  8.26
+
+  clock CLK (rise edge)                                   8.00       8.00
+  clock network delay (ideal)                             0.50       8.50
+  clock uncertainty                                      -0.10       8.40
+  C1_inboolean_reg[5]/CK (DFFXL)                          0.00       8.40 r
+  library setup time                                     -0.14       8.26
+  data required time                                                 8.26
+  --------------------------------------------------------------------------
+  data required time                                                 8.26
+  data arrival time                                                 -8.26
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

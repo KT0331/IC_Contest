@@ -1,0 +1,58 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: P-2019.03
+Date   : Fri Apr  1 14:28:06 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: Cost[0] (input port clocked by CLK)
+  Endpoint: sum_reg_reg[9]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  JAM                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (fall edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  input external delay                     0.00       5.50 f
+  Cost[0] (in)                             0.00       5.50 f
+  U716/CO (ADDHXL)                         0.22       5.72 f
+  U951/CO (ADDFXL)                         0.51       6.23 f
+  U842/CO (ADDFXL)                         0.53       6.76 f
+  U1125/CO (ADDFXL)                        0.53       7.28 f
+  U717/CO (ADDFXL)                         0.53       7.81 f
+  U1127/CO (ADDFXL)                        0.53       8.34 f
+  U1129/CO (ADDFXL)                        0.52       8.86 f
+  U1131/CO (ADDHXL)                        0.34       9.20 f
+  U638/CO (ADDHX2)                         0.29       9.49 f
+  U637/Y (AOI2BB2X4)                       0.21       9.70 f
+  U756/Y (AO22X1)                          0.42      10.12 f
+  sum_reg_reg[9]/D (DFFQX1)                0.00      10.12 f
+  data arrival time                                  10.12
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  sum_reg_reg[9]/CK (DFFQX1)               0.00      10.40 r
+  library setup time                      -0.27      10.13
+  data required time                                 10.13
+  -----------------------------------------------------------
+  data required time                                 10.13
+  data arrival time                                 -10.12
+  -----------------------------------------------------------
+  slack (MET)                                         0.01
+
+
+1

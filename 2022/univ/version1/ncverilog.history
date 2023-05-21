@@ -1,0 +1,9 @@
+s1(01Apr2022:14:22:24):  ncverilog -sv tb.sv JAM.v +define+P1 
+s2(01Apr2022:14:22:33):  ncverilog -sv tb.sv JAM_rename.v +define+P1 
+s3(01Apr2022:14:22:41):  ncverilog -sv tb.sv JAM_rename.v +define+P2 
+s4(01Apr2022:14:22:48):  ncverilog -sv tb.sv JAM_rename.v +define+P3 
+s5(01Apr2022:14:23:10):  ncverilog -sv tb.sv JAM.v +define+P1 
+s6(01Apr2022:14:29:02):  ncverilog -sv tb.sv JAM_syn.v +define+P1 +define+SDF 
+s7(01Apr2022:14:29:54):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+P1 +define+SDF 
+s8(01Apr2022:14:30:19):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+P2 +define+SDF 
+s9(01Apr2022:14:30:44):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+P3 +define+SDF 

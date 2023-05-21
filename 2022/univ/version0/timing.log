@@ -1,0 +1,59 @@
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : JAM
+Version: P-2019.03
+Date   : Wed Mar 30 14:50:25 2022
+****************************************
+
+Operating Conditions: slow   Library: slow
+Wire Load Model Mode: top
+
+  Startpoint: RST (input port clocked by CLK)
+  Endpoint: sequence_reg[1][1]
+            (rising edge-triggered flip-flop clocked by CLK)
+  Path Group: CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  JAM                tsmc13_wl10           slow
+
+  Point                                    Incr       Path
+  -----------------------------------------------------------
+  clock CLK (fall edge)                    5.00       5.00
+  clock network delay (ideal)              0.50       5.50
+  input external delay                     0.00       5.50 r
+  RST (in)                                 0.02       5.52 r
+  U886/Y (NOR2X1)                          0.22       5.74 f
+  U887/Y (NAND2X1)                         0.31       6.05 r
+  U597/Y (BUFX6)                           0.22       6.27 r
+  U893/Y (CLKINVX1)                        0.14       6.40 f
+  U640/Y (CLKBUFX3)                        0.48       6.88 f
+  U926/Y (NAND2X1)                         0.30       7.18 r
+  U580/Y (CLKBUFX3)                        0.58       7.76 r
+  U642/Y (CLKINVX1)                        0.57       8.33 f
+  U675/Y (AOI211XL)                        0.61       8.93 r
+  U969/Y (OAI21XL)                         0.30       9.24 f
+  U777/Y (AOI211XL)                        0.54       9.78 r
+  U970/Y (OAI22XL)                         0.30      10.08 f
+  sequence_reg[1][1]/D (DFFQX1)            0.00      10.08 f
+  data arrival time                                  10.08
+
+  clock CLK (rise edge)                   10.00      10.00
+  clock network delay (ideal)              0.50      10.50
+  clock uncertainty                       -0.10      10.40
+  sequence_reg[1][1]/CK (DFFQX1)           0.00      10.40 r
+  library setup time                      -0.31      10.09
+  data required time                                 10.09
+  -----------------------------------------------------------
+  data required time                                 10.09
+  data arrival time                                 -10.08
+  -----------------------------------------------------------
+  slack (MET)                                         0.00
+
+
+1

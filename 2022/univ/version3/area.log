@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : JAM
+Version: P-2019.03
+Date   : Wed Apr 13 15:34:49 2022
+****************************************
+
+Library(s) Used:
+
+    slow (File: /home/univtrain/4108064101/CBDK_IC_Contest_v2.5/SynopsysDC/db/slow.db)
+
+Number of ports:                           30
+Number of nets:                           803
+Number of cells:                          783
+Number of combinational cells:            691
+Number of sequential cells:                91
+Number of macros/black boxes:               0
+Number of buf/inv:                        169
+Number of references:                      86
+
+Combinational area:               5506.365638
+Buf/Inv area:                      940.359588
+Noncombinational area:            2335.622433
+Macro/Black Box area:                0.000000
+Net Interconnect area:           99867.169708
+
+Total cell area:                  7841.988070
+Total area:                     107709.157779
+1

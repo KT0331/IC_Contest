@@ -1,0 +1,8 @@
+s1(13Apr2022:15:33:58):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDP +define+P1 
+s2(13Apr2022:15:34:12):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDP +define+P1 +nospecify 
+s3(13Apr2022:15:34:58):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDP +define+P1 
+s4(13Apr2022:15:35:15):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDP +define+P1 +nospecify 
+s5(13Apr2022:15:35:25):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDP +define+P1 
+s6(13Apr2022:15:47:36):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDF +define+P1 
+s7(13Apr2022:15:53:17):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDF +define+P2 
+s8(13Apr2022:15:53:41):  ncverilog -sv tb.sv JAM_syn.v -v tsmc13_neg.v +define+SDF +define+P3 

@@ -7,7 +7,7 @@
 //
 // ABSTRACT:  IC contest 2023
 // DESIGN VERSION: 1
-// DESCRIPITON: cycle = 
+// DESCRIPITON: cycle = 25566
 //              area  = 
 // MODIFIED: 將input的data儲存時採用shift register
 //
